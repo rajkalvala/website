@@ -1,30 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Complete Your Payment</title>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank of Harmony</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Banking Payment</h1>
-    <form>
-      <label for="name">Name on Card:</label>
-      <input type="text" id="name" required>
-      
-      <label for="cardNumber">Card Number:</label>
-      <input type="number" id="cardNumber" required>
-      
-      <label for="expiry">Expiry Date:</label>
-      <input type="text" id="expiry" required>
-      
-      <label for="cvv">CVV:</label>
-      <input type="number" id="cvv" required>
-      
-      <label for="amount">Payment Amount:</label>
-      <input type="number" id="amount" required>
-      
-      <input type="submit" value="Make Payment" class="btn">
-    </form>
-  </div>
+    <header>
+        <h1>Bank of Harmony</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Accounts</a></li>
+                <li><a href="#">Transactions</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search...">
+                <button id="search-button">Search</button>
+            </div>
+            <div class="search-results">
+                <h3>Search Results:</h3>
+                <ul id="search-results-list">
+                    <!-- Search results will be dynamically added here -->
+                </ul>
+            </div>
+        </section>
+
+        <section class="featured-accounts">
+            <h2>Featured Accounts</h2>
+            <div class="account">
+                <img src="savings-account.jpg" alt="Savings Account">
+                <h3>Savings Account</h3>
+                <p>Start saving today with our high-interest savings account.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="account">
+                <img src="checking-account.jpg" alt="Checking Account">
+                <h3>Checking Account</h3>
+                <p>Manage your daily transactions and payments easily.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Bank of Harmony. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
